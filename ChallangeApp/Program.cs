@@ -1,5 +1,5 @@
 ﻿using ChallangeApp;
-using ChallangeApp;
+
 
 Employee user1 = new Employee("Marek", "Dzień", 25);
 Employee user2 = new Employee("Agnieszka", "Strzałka", 30);
