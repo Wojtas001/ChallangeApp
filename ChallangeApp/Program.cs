@@ -21,7 +21,7 @@ user3.AddScore(5);
 user3.AddScore(4);
 user3.AddScore(9);
 user3.AddScore(7);
-user3.AddScore(3);
+user3.AddScore(2);
 
 List<Employee> users = new List<Employee>()
 {
