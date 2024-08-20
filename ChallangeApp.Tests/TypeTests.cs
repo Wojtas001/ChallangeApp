@@ -27,8 +27,8 @@
         [Test]
         public void StringAreEqual()
         {
-            string a = "34";
-            string b = "34";
+            string a = "36";
+            string b = "36";
 
 
             Assert.AreEqual(a, b);
