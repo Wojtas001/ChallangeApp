@@ -27,8 +27,8 @@
         [Test]
         public void StringAreEqual()
         {
-            string a = "36";
-            string b = "36";
+            string a = "34";
+            string b = "34";
 
 
             Assert.AreEqual(a, b);
@@ -40,7 +40,7 @@
         {
             double a = 4.55543;
             double b = 3.434534;
-      
+
 
             Assert.AreNotEqual(a, b);
         }

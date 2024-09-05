@@ -3,54 +3,52 @@ namespace ChallangeApp.Tests
     public class EmployeeTest
     {
         [Test]
-        public void EmployeeCollectionScoreTest()
+        public void GetStatistic_CheckingCorrectMax()
+
         {
-            var user1 = new Employee("Marek", "Dzień", 25);
-            user1.AddScore(4);
-            user1.AddScore(6);
-            user1.AddScore(8);
-            user1.AddScore(6);
+            var employee = new Employee("Marek", "Dzień");
+            employee.AddGrade(4);
+            employee.AddGrade(6);
+            employee.AddGrade(8);
+            employee.AddGrade(6);
 
-            var results = user1.Result;
+            var statistics = employee.GetStatistics;
 
-            Assert.AreEqual(24, results);
+            Assert.AreEqual(8, statistics.Max);
 
         }
 
 
         [Test]
-        public void EmployeeCollectionMinusScore()
+        public void GetStatistic_CheckingCorrectMin()
         {
-            var user2 = new Employee("Agnieszka", "Strzałka", 30);
-            user2.AddScore(-9);
-            user2.AddScore(-1);
-            user2.AddScore(-5);
-            user2.AddScore(-1);
+            var employee1 = new Employee("Agnieszka", "Strzałka");
+            employee1.AddGrade(6);
+            employee1.AddGrade(5);
+            employee1.AddGrade(4);
 
-            var results1 = user2.Result;
 
-            Assert.AreEqual(-16, results1);
+            var statistics = employee1.GetStatistics;
+
+            Assert.AreEqual(4, statistics.Min);
         }
 
 
         [Test]
-        public void EmployeeCollectionMixedScores()
+        public void GetStatistic_CheckingCorrectAverage()
         {
-            var user3 = new Employee("Kuba", "Gleń", 27);
-            user3.AddScore(5);
-            user3.AddScore(-4);
-            user3.AddScore(9);
-            user3.AddScore(-7);
+            var employee2 = new Employee("Kuba", "Gleń");
+            employee2.AddGrade(5);
+            employee2.AddGrade(4);
+            employee2.AddGrade(9);
 
 
-            var results2 = user3.Result;
 
-            Assert.AreEqual(3, results2);
+            var statistics = employee2.GetStatistics;
+
+            Assert.AreEqual(Math.Round(6.00, 2), Math.Round(statistics.Average, 2));
         }
 
 
-    }   
-      
-   
+    }
 }
-  
