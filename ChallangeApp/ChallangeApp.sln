@@ -5,7 +5,7 @@ VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallangeApp", "ChallangeApp.csproj", "{C0CB57CD-60F2-4EEC-A49F-BF9DB0B4EDEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallangeApp.Tests", "..\ChallangeApp.Tests\ChallangeApp.Tests.csproj", "{C94D27C4-F3EC-4BAF-A28C-D412BDBC0AED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallangeApp.Tests", "..\ChallangeApp.Tests\ChallangeApp.Tests.csproj", "{3B4A10C8-B38A-4E3C-89F5-58D61EEDB8D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{C0CB57CD-60F2-4EEC-A49F-BF9DB0B4EDEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0CB57CD-60F2-4EEC-A49F-BF9DB0B4EDEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0CB57CD-60F2-4EEC-A49F-BF9DB0B4EDEC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C94D27C4-F3EC-4BAF-A28C-D412BDBC0AED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C94D27C4-F3EC-4BAF-A28C-D412BDBC0AED}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C94D27C4-F3EC-4BAF-A28C-D412BDBC0AED}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C94D27C4-F3EC-4BAF-A28C-D412BDBC0AED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B4A10C8-B38A-4E3C-89F5-58D61EEDB8D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B4A10C8-B38A-4E3C-89F5-58D61EEDB8D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B4A10C8-B38A-4E3C-89F5-58D61EEDB8D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B4A10C8-B38A-4E3C-89F5-58D61EEDB8D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

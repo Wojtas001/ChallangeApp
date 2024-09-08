@@ -12,7 +12,7 @@ namespace ChallangeApp.Tests
             employee.AddGrade(8);
             employee.AddGrade(6);
 
-            var statistics = employee.GetStatistics;
+            var statistics = employee.GetStatistics();
 
             Assert.AreEqual(8, statistics.Max);
 
@@ -28,7 +28,7 @@ namespace ChallangeApp.Tests
             employee1.AddGrade(4);
 
 
-            var statistics = employee1.GetStatistics;
+            var statistics = employee1.GetStatistics();
 
             Assert.AreEqual(4, statistics.Min);
         }
@@ -44,7 +44,7 @@ namespace ChallangeApp.Tests
 
 
 
-            var statistics = employee2.GetStatistics;
+            var statistics = employee2.GetStatistics();
 
             Assert.AreEqual(Math.Round(6.00, 2), Math.Round(statistics.Average, 2));
         }
