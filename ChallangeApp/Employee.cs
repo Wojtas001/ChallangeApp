@@ -22,7 +22,7 @@
             }
             else
             {
-                Console.WriteLine("invalid float grade value");
+                Console.WriteLine($"invalid float grade value {grade}");
             }
         }
 
@@ -31,15 +31,11 @@
 
             if (float.TryParse(grade, out float result))
             {
-            }
-            if (result >= 0 && result <= 100)
-            {
-                this.grades.Add(result);
+                this.AddGrade(result);
             }
             else
             {
-                Console.WriteLine("invalid string grade value");
-                Console.WriteLine("string is not float");
+                Console.WriteLine($"string is not float {grade}");
             }
         }
 
@@ -51,7 +47,7 @@
             }
             else
             {
-                Console.WriteLine("invalid double grade value");
+                Console.WriteLine($"invalid double grade value {grade}");
             }
         }
 
@@ -63,7 +59,7 @@
             }
             else
             {
-                Console.WriteLine("invalid decimal grade value");
+                Console.WriteLine($"invalid decimal grade value {grade}");
             }
         }
 
@@ -75,7 +71,7 @@
             }
             else
             {
-                Console.WriteLine("invalid long grade value");
+                Console.WriteLine($"invalid long grade value {grade}");
             }
         }
 
@@ -87,7 +83,7 @@
             }
             else
             {
-                Console.WriteLine("invalid int grade value");
+                Console.WriteLine($"invalid int grade value {grade}");
             }
         }
 

@@ -15,7 +15,7 @@ employee.AddGrade(10);
 employee.AddGrade(2);
 employee.AddGrade(200.0f);
 employee.AddGrade(30.0f);
-employee.AddGrade("12.34");
+employee.AddGrade("12,34");
 
 
 
