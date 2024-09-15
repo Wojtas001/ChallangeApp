@@ -15,7 +15,6 @@ namespace ChallangeApp.Tests
             var statistics = employee.GetStatistics();
 
             Assert.AreEqual(8, statistics.Max);
-
         }
 
 
@@ -46,9 +45,7 @@ namespace ChallangeApp.Tests
 
             var statistics = employee2.GetStatistics();
 
-            Assert.AreEqual(Math.Round(6.00, 2), Math.Round(statistics.Average, 2));
+            Assert.AreEqual(Math.Round(6.00, 2), Math.Round(statistics.Average, 6));
         }
-
-
     }
 }
