@@ -22,7 +22,7 @@
             }
             else
             {
-                Console.WriteLine($"invalid float grade value {grade}");
+                Console.WriteLine($"invalid float grade value: {grade}");
             }
         }
 
@@ -35,34 +35,22 @@
             }
             else
             {
-                Console.WriteLine($"string is not float {grade}");
+                Console.WriteLine($"string is not float: {grade}");
             }
         }
-
+        // wersja 1 lepsza
         public void AddGrade(double grade)
         {
-            if (grade >= 0 && grade <= 100)
-            {
-                this.grades.Add((float)grade);
-            }
-            else
-            {
-                Console.WriteLine($"invalid double grade value {grade}");
-            }
+            float score = (float)grade;
+            this.AddGrade(score);
         }
 
         public void AddGrade(decimal grade)
         {
-            if (grade >= 0 && grade <= 100)
-            {
-                this.grades.Add((float)grade);
-            }
-            else
-            {
-                Console.WriteLine($"invalid decimal grade value {grade}");
-            }
+            float score = (float)grade;
+            this.AddGrade(score);
         }
-
+        // wersja 2
         public void AddGrade(long grade)
         {
             if (grade >= 0 && grade <= 100)
@@ -71,7 +59,7 @@
             }
             else
             {
-                Console.WriteLine($"invalid long grade value {grade}");
+                Console.WriteLine($"invalid long grade value: {grade}");
             }
         }
 
@@ -83,7 +71,7 @@
             }
             else
             {
-                Console.WriteLine($"invalid int grade value {grade}");
+                Console.WriteLine($"invalid int grade value: {grade}");
             }
         }
 
