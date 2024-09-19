@@ -18,41 +18,8 @@ employee.AddGrade(30.0f);
 employee.AddGrade("12,34");
 
 
-
-
 var statistics = employee.GetStatistics();
 
-var statistics1 = employee.GetStatisticsWithForEach();
-var statistics2 = employee.GetStatisticsWithFor();
-var statistics3 = employee.GetStatisticsWithDoWhile();
-var statistics4 = employee.GetStatisticsWithWhile();
-
-
-
-
-
-//Console.WriteLine($"Average: {statistics.Average:N2}"); 
-
-Console.WriteLine($"Average: {Math.Round(statistics.Average)}");
-Console.WriteLine($"Min: {statistics.Min}");
-Console.WriteLine($"Max: {statistics.Max}");
-
-Console.WriteLine("         <WithForEach>           ");
-Console.WriteLine($"Average: {Math.Round(statistics.Average)}");
-Console.WriteLine($"Min: {statistics.Min}");
-Console.WriteLine($"Max: {statistics.Max}");
-
-Console.WriteLine("         <WithFor>           ");
-Console.WriteLine($"Average: {Math.Round(statistics.Average)}");
-Console.WriteLine($"Min: {statistics.Min}");
-Console.WriteLine($"Max: {statistics.Max}");
-
-Console.WriteLine("         <WithDoWhile>           ");
-Console.WriteLine($"Average: {Math.Round(statistics.Average)}");
-Console.WriteLine($"Min: {statistics.Min}");
-Console.WriteLine($"Max: {statistics.Max}");
-
-Console.WriteLine("         <WithWhile>           ");
 Console.WriteLine($"Average: {Math.Round(statistics.Average)}");
 Console.WriteLine($"Min: {statistics.Min}");
 Console.WriteLine($"Max: {statistics.Max}");
