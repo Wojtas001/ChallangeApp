@@ -39,42 +39,6 @@
             }
         }
        
-        public void AddGrade(double grade)
-        {
-            float score = (float)grade;
-            this.AddGrade(score);
-        }
-
-        public void AddGrade(decimal grade)
-        {
-            float score = (float)grade;
-            this.AddGrade(score);
-        }
-     
-        public void AddGrade(long grade)
-        {
-            if (grade >= 0 && grade <= 100)
-            {
-                this.grades.Add((float)grade);
-            }
-            else
-            {
-                Console.WriteLine($"invalid long grade value: {grade}");
-            }
-        }
-
-        public void AddGrade(int grade)
-        {
-            if (grade >= 0 && grade <= 100)
-            {
-                this.grades.Add((float)grade);
-            }
-            else
-            {
-                Console.WriteLine($"invalid int grade value: {grade}");
-            }
-        }
-
         public Statistics GetStatistics()
         {
             var statistics = new Statistics();
