@@ -38,21 +38,21 @@ Console.WriteLine($"Min: {statistics.Min}");
 Console.WriteLine($"Max: {statistics.Max}");
 
 Console.WriteLine("         <WithForEach>           ");
-Console.WriteLine($"Average: {Math.Round(statistics1.Average)}");
-Console.WriteLine($"Min: {statistics1.Min}");
-Console.WriteLine($"Max: {statistics1.Max}");
+Console.WriteLine($"Average: {Math.Round(statistics.Average)}");
+Console.WriteLine($"Min: {statistics.Min}");
+Console.WriteLine($"Max: {statistics.Max}");
 
 Console.WriteLine("         <WithFor>           ");
-Console.WriteLine($"Average: {Math.Round(statistics2.Average)}");
-Console.WriteLine($"Min: {statistics2.Min}");
-Console.WriteLine($"Max: {statistics2.Max}");
+Console.WriteLine($"Average: {Math.Round(statistics.Average)}");
+Console.WriteLine($"Min: {statistics.Min}");
+Console.WriteLine($"Max: {statistics.Max}");
 
 Console.WriteLine("         <WithDoWhile>           ");
-Console.WriteLine($"Average: {Math.Round(statistics3.Average)}");
-Console.WriteLine($"Min: {statistics3.Min}");
-Console.WriteLine($"Max: {statistics3.Max}");
+Console.WriteLine($"Average: {Math.Round(statistics.Average)}");
+Console.WriteLine($"Min: {statistics.Min}");
+Console.WriteLine($"Max: {statistics.Max}");
 
 Console.WriteLine("         <WithWhile>           ");
-Console.WriteLine($"Average: {Math.Round(statistics4.Average)}");
-Console.WriteLine($"Min: {statistics4.Min}");
-Console.WriteLine($"Max: {statistics4.Max}");
+Console.WriteLine($"Average: {Math.Round(statistics.Average)}");
+Console.WriteLine($"Min: {statistics.Min}");
+Console.WriteLine($"Max: {statistics.Max}");
