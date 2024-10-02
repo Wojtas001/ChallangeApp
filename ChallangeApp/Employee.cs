@@ -3,20 +3,11 @@
     public class Employee
     {
         private List<float> grades = new List<float>();
-
-        public Employee()
-        {
-        }
-
+  
         public Employee(string name, string surname)
         {
             this.Name = name;
             this.Surname = surname;
-        }
-
-        public Employee(string name)
-        {
-            this.Name = name;
         }
 
         public string Name { get; private set; }
@@ -31,16 +22,16 @@
             }
             else
             {
-                Console.WriteLine($"invalid float grade value: {grade}");
+                throw new Exception("invalid float grade value");
             }
         }
 
         public void AddGrade(string grade)
         {
 
-            if (float.TryParse(grade, out float result))
+            if (float.TryParse(grade, out float resultFloat))
             {
-                this.AddGrade(result);
+                this.AddGrade(resultFloat);
                 
             }
             else if (char.TryParse(grade, out char resultChar))
@@ -68,16 +59,9 @@
                         this.grades.Add(20);
                         break;
                     default:
-                        Console.WriteLine($"Wrong Letter: '{grade}'");
-                        break;
+                        throw new Exception("Wrong Letter");
                 }
             }
-        }
-
-        public void AddGrade(int grade)
-        {
-            float score = (float)grade;
-            this.AddGrade(score);
         }
 
         public Statistics GetStatistics()
@@ -96,7 +80,6 @@
                     statistics.Min = Math.Min(statistics.Min, grade);
                     statistics.Average += grade;
                 }
-
             }
 
             statistics.Average /= this.grades.Count;
@@ -120,7 +103,6 @@
                     break;
 
             }
-
             return statistics;
         }
 

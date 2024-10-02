@@ -5,10 +5,10 @@
         [Test]
         public void WhenLettersInput_ShouldReturnScoreAsLetter()
         {
-           Employee employee = new Employee("Mirek");
+           Employee employee = new Employee("Mirek","Duda");
             employee.AddGrade('A');
             employee.AddGrade('B');
-            employee.AddGrade('e');
+            employee.AddGrade('E');
             employee.AddGrade('c');
             employee.AddGrade('a');
             employee.AddGrade('D');
@@ -23,7 +23,7 @@
         [Test]
         public void WhenLettersStringInput_ShouldReturnScoreAsNumbers()
         {
-            Employee employee = new Employee("Mirek");
+            Employee employee = new Employee("Mirek", "Duda");
             employee.AddGrade("A");
             employee.AddGrade("c");
             employee.AddGrade("D");
@@ -37,7 +37,7 @@
         [Test]
         public void WhenMixInput_ShouldReturnScoreAsLetter()
         {
-            Employee employee = new Employee("Mirek");
+            Employee employee = new Employee("Mirek", "Duda");
             employee.AddGrade("20");
             employee.AddGrade("c");
             employee.AddGrade(40);
@@ -51,7 +51,7 @@
         [Test]
         public void WhenMixStringInput_ShouldReturnScoreAsNumbers()
         {
-            Employee employee = new Employee("Mirek");
+            Employee employee = new Employee("Mirek", "Duda");
             employee.AddGrade("A");
             employee.AddGrade("10");
             employee.AddGrade("d");

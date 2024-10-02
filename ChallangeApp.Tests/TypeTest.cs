@@ -59,7 +59,7 @@
 
         private Employee GetEmployee(string name)
         {
-            return new Employee(name);
+            return new Employee("Mirek", "Duda");
         }
     }
 }
