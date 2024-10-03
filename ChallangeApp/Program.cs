@@ -6,10 +6,12 @@ Console.WriteLine();
 
 var employee = new Employee("Mirek","Duda");
 
+
 while (true)
 {
     Console.WriteLine("Podaj ocenę pracownika od 0-100 lub od A-E. Aby zakończyć nacisnij 'Q' + 'Enter': ");
     var input = Console.ReadLine();
+
     if (input == "q" || input == "Q")
     {
         break;
@@ -26,7 +28,8 @@ while (true)
 
 
 var statistics = employee.GetStatistics();
-Console.WriteLine($"Average: {(statistics.AverageLetter)}");
+Console.WriteLine($"\nStatystyki pracownika: {employee.Name} {employee.Surname}, {employee.Sex}.");
+Console.WriteLine($"Average: {statistics.Average:N2}");
 Console.WriteLine($"Min: {statistics.Min}");
 Console.WriteLine($"Max: {statistics.Max}");
-
+Console.WriteLine($"Average: {(statistics.AverageLetter)}");
