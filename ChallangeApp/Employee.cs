@@ -60,7 +60,6 @@
                 }
             }
         }
-
         public void AddGrade(int grade)
         {
             this.AddGrade((float)grade);
