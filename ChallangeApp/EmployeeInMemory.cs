@@ -1,22 +1,15 @@
 ﻿namespace ChallangeApp
 {
-    public class Employee : IEmployee
+    internal class EmployeeInMemory : EmployeeBase
     {
+        public EmployeeInMemory(string name, string surname, char sex, int age)
+            : base(name, surname, sex, age)
+        {
+        }
+
         private List<float> grades = new List<float>();
 
-        public Employee(string name, string surname, char sex, int age)
-        {
-            this.Name = name;
-            this.Surname = surname;
-            this.Sex = sex;
-            this.Age = age;
-        }
-        public string Name { get; private set; }
-        public string Surname { get; private set; }
-        public char Sex { get; private set; }
-        public int Age { get; private set; }
-
-        public void AddGrade(float grade)
+        public override void AddGrade(float grade)
         {
             if (grade >= 0 && grade <= 100)
             {
@@ -24,11 +17,11 @@
             }
             else
             {
-                throw new Exception("invalid float grade value");
+                throw new Exception("invalid float value");
             }
         }
 
-        public void AddGrade(string grade)
+        public override void AddGrade(string grade)
         {
             if (float.TryParse(grade, out float resultFloat))
             {
@@ -67,22 +60,23 @@
                 throw new Exception("string is not float");
             }
         }
-        public void AddGrade(int grade)
+
+        public override void AddGrade(int grade)
         {
             this.AddGrade((float)grade);
         }
 
-        public void AddGrade(char grade)
+        public override void AddGrade(char grade)
         {
             this.AddGrade((float)grade);
         }
 
-        public void AddGrade(double grade)
+        public override void AddGrade(double grade)
         {
             this.AddGrade((float)grade);
         }
 
-        public Statistics GetStatistics()
+        public override Statistics GetStatistics()
         {
             var statistics = new Statistics();
 
@@ -126,5 +120,3 @@
         }
     }
 }
-
-

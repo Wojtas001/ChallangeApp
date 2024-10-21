@@ -6,7 +6,13 @@
 
         string Surname { get; }
 
+        char Sex { get; }
+
+        int Age { get; }
+
         void AddGrade(float grade);
+
+        void AddGrade(double grade);
 
         void AddGrade(string grade);
 
