@@ -8,7 +8,14 @@ Console.WriteLine();
 Console.ResetColor();
 
 var employee = new EmployeeInFile("Mirek","Duda",'M', 26);
+employee.GradeAdded += EmployeeGradeAdded;
 
+void EmployeeGradeAdded(object sender, EventArgs args)
+{
+    Console.ForegroundColor = ConsoleColor.DarkMagenta;
+    Console.WriteLine("Dodano nową ocenę");
+    Console.ResetColor();
+}
 
 while (true)
 {
@@ -32,7 +39,6 @@ while (true)
         Console.ResetColor();
     }
 }
-
 
 var statistics = employee.GetStatistics();
 Console.ForegroundColor = ConsoleColor.DarkYellow;

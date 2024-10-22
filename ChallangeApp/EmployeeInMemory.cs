@@ -2,6 +2,8 @@
 {
     internal class EmployeeInMemory : EmployeeBase
     {
+        public override event GradeAddedDelegate GradeAdded;
+
         public EmployeeInMemory(string name, string surname, char sex, int age)
             : base(name, surname, sex, age)
         {
@@ -14,6 +16,11 @@
             if (grade >= 0 && grade <= 100)
             {
                 this.grades.Add(grade);
+
+                if(GradeAdded != null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
             }
             else
             {

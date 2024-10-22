@@ -6,7 +6,7 @@ namespace ChallangeApp.Tests
         public void GetStatistic_CheckingCorrectMax()
 
         {
-            var employee = new Employee("Marek", "Dzień");
+            var employee = new EmployeeInFile("Marek", "Dzień", 'M', 26);
             employee.AddGrade(4);
             employee.AddGrade(6);
             employee.AddGrade(8);
@@ -21,7 +21,7 @@ namespace ChallangeApp.Tests
         [Test]
         public void GetStatistic_CheckingCorrectMin()
         {
-            var employee1 = new Employee("Agnieszka", "Strzałka");
+            var employee1 = new EmployeeInFile("Agnieszka", "Strzałka", 'K', 22);
             employee1.AddGrade(6);
             employee1.AddGrade(5);
             employee1.AddGrade(4);
@@ -36,7 +36,7 @@ namespace ChallangeApp.Tests
         [Test]
         public void GetStatistic_CheckingCorrectAverage()
         {
-            var employee2 = new Employee("Kuba", "Gleń");
+            var employee2 = new EmployeeInFile("Kuba", "Gleń", 'M', 24);
             employee2.AddGrade(5);
             employee2.AddGrade(4);
             employee2.AddGrade(9);

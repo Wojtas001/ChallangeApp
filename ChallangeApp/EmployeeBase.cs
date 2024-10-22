@@ -4,6 +4,10 @@ namespace ChallangeApp
 {
     public abstract class EmployeeBase : IEmployee
     {
+        public delegate void GradeAddedDelegate(object sender, EventArgs args);
+
+        public abstract event GradeAddedDelegate GradeAdded;
+
         protected EmployeeBase(string name, string surname, char sex, int age)
         {
             this.Name = name;
@@ -12,6 +16,7 @@ namespace ChallangeApp
             this.Age = age;
         }
 
+        
         public string Name { get; private set; }
         public string Surname { get; private set; }
         public char Sex { get; private set; }
