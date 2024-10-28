@@ -42,10 +42,11 @@ while (true)
 
 var statistics = employee.GetStatistics();
 Console.ForegroundColor = ConsoleColor.DarkYellow;
-Console.WriteLine($"\nStatystyki pracownika: {employee.Name} {employee.Surname} {employee.Sex} {employee.Age}.");
-Console.WriteLine($"Average score: {statistics.Average:N2}");
+Console.WriteLine($"\nStatystyki pracownika: -{employee.Name} {employee.Surname}- Sex:{employee.Sex} Age:{employee.Age} ");
+Console.WriteLine($"\nNumber of ratings: {statistics.NumberOfRatings}");
 Console.WriteLine($"Min score: {statistics.Min}");
 Console.WriteLine($"Max score: {statistics.Max}");
+Console.WriteLine($"Sum: {statistics.Sum}");
+Console.WriteLine($"\nAverage score: {statistics.Average:N2}");
 Console.WriteLine($"Average score in letter: {statistics.AverageLetter}");
-Console.WriteLine($"Number of ratings: {statistics.NumberOfRatings}");
 Console.ResetColor();
